@@ -1,0 +1,84 @@
+/* Fundo escuro e sombra */
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Previne rolagem horizontal */
+    max-width: 100%; /* Garante que a largura não ultrapasse a tela */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+* {
+    box-sizing: border-box; /* Aplica o box-sizing a todos os elementos */
+}
+
+.header {
+    background-color: #111;
+    padding: 40px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Estilo das abas */
+.links {
+    padding: 20px;
+}
+
+.link-item {
+    background-color: #222;
+    margin: 10px 0;
+    padding: 20px;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%; /* Impede que ultrapasse a tela */
+    transition: all 0.3s ease;
+}
+
+.link-item:hover {
+    background-color: #333;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.open-window {
+    width: 20px;
+    height: 20px;
+    margin-left: auto; /* Alinha o ícone da janela para a direita */
+}
+
+.link-item:hover .open-window {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
